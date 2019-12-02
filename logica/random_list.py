@@ -15,7 +15,7 @@ def songPlaylist(playlist):
 
     assert song_list != []
 
-    print(song_list)
+    return song_list
 
 
 
