@@ -1,13 +1,11 @@
 import xml.etree.ElementTree as ET
 
-library = '/home/cristina/Escritorio/ProyectoVLC/libreriaXml/Library.xml'
 
-tree = ET.parse(library)
-root = tree.getroot()
+def xmlParse(library):
 
-
-def xmlParse(root, library):
-
+    tree = ET.parse(library)
+    root = tree.getroot()
+    
     try:
         f = open(library)
     except FileNotFoundError:
@@ -25,7 +23,4 @@ def xmlParse(root, library):
 
     assert playlist != {}
 
-    print(playlist)
-
-
-xmlParse(root, library)
+    return(playlist)
