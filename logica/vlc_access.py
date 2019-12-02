@@ -10,6 +10,6 @@ def vlcAccess(vlcpath, randomplaylist):
     else:
         pass
 
-    return os.popen(vlcpath + " " + randomplaylist)
+    return os.popen(vlcpath + randomplaylist)
 
 
