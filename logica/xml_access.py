@@ -7,7 +7,7 @@ def xmlParse(library):
     root = tree.getroot()
     
     try:
-        f = open(library)
+        p = open(library)
     except FileNotFoundError:
          print('File not found')
     else:
